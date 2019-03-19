@@ -1,6 +1,6 @@
 package main.com.java;
 
-import static io.restassured.RestAssured.get;
+import static io.restassured.RestAssured.*;
 
 import io.restassured.response.Response;
 import org.json.JSONArray;
@@ -19,19 +19,22 @@ import org.testng.annotations.Test;
 import java.util.Date;
 public class Simple {
 //Пример посылки GET-запроса
+private String userName = "v.bobrik@kino-mo.com";
+    private String password = "NIKita-1995.@";
+    private String baseUrl = "https://stage-platform.kino-mo.com/#/login/api/admin/0/session";
 
-        @Test(description = "GET")
+       // @Test(description = "GET")
         public void getRequestExampleTest() throws JSONException {
-            Response response = get("http://restcountries.eu/rest/v1/name/russia");
+            Response response = get(baseUrl);
             JSONArray jsonResponse = new JSONArray(response.asString());
-            String capital = jsonResponse.getJSONObject(0).getString("capital");
-            Assert.assertEquals(capital, "Moscow");
+            String capital = jsonResponse.getJSONObject(0).getString(userName);
+            Assert.assertEquals(capital, password);
         }
 
 
 
     //Пример посылки POST-запроса
-        @Test(description = "POST")
+       // @Test(description = "POST")
         public void postRequestExampleTest() {
             String someRandomString = String.format("%1$TH%1$TM%1$TS", new Date());
 
@@ -53,6 +56,5 @@ public class Simple {
             Assert.assertEquals(successCode, "OPERATION_SUCCESS");
             System.out.println(response.getBody().asString());
         }
-
 
 }

@@ -18,36 +18,19 @@
 
   <dependencies>
 
-    //FOR SIMPLE******************************
-    <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <version>3.0.7</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>20180130</version>
-    </dependency>
-
-
-    //**********************************
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-     <!-- <scope>test</scope>-->
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
     <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
       <version>3.3.0</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20180813</version>
+    </dependency>
+
 
     <dependency>
       <groupId>io.rest-assured</groupId>
@@ -61,23 +44,12 @@
       <version>6.9.10</version>
       <!--<scope>test</scope>-->
     </dependency>
-    <dependency>
-      <groupId>com.jayway.restassured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <version>2.9.0</version>
-      <scope>test</scope>
-    </dependency>
+
     <dependency>
       <groupId>com.jayway.restassured</groupId>
       <artifactId>rest-assured</artifactId>
       <version>2.9.0</version>
       <scope>compile</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>20180813</version>
     </dependency>
 
     <dependency>
@@ -119,6 +91,20 @@
       <artifactId>activation</artifactId>
       <version>1.1.1</version>
     </dependency>
+
+      <dependency>
+          <groupId>io.rest-assured</groupId>
+          <artifactId>rest-assured</artifactId>
+          <version>RELEASE</version>
+          <scope>compile</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+      <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>2.8.1</version>
+      </dependency>
 
   </dependencies>
 
