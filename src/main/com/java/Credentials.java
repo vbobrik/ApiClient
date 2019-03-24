@@ -1,22 +1,15 @@
 package main.com.java;
 
+import com.google.gson.JsonObject;
+
 public class Credentials {
-    private String userName = "v.bobrik@kino-mo.com";
-    private String password = "NIKita-1995.@";
+    private static String userName = "v.bobrik@kino-mo.com";
+    private static String password = "NIKita-1995.@";
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public static JsonObject credentialsAsJson() {
+        JsonObject jsonObject = new JsonObject();
+                jsonObject.addProperty("password", password);
+                jsonObject.addProperty("username", userName);
+        return jsonObject;
     }
 }

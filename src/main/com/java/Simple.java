@@ -23,6 +23,8 @@ private String userName = "v.bobrik@kino-mo.com";
     private String password = "NIKita-1995.@";
     private String baseUrl = "https://stage-platform.kino-mo.com/#/login/api/admin/0/session";
 
+
+
        // @Test(description = "GET")
         public void getRequestExampleTest() throws JSONException {
             Response response = get(baseUrl);
