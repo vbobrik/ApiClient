@@ -19,8 +19,8 @@ import org.testng.annotations.Test;
 import java.util.Date;
 public class Simple {
 //Пример посылки GET-запроса
-private String userName = "v.bobrik@kino-mo.com";
-    private String password = "NIKita-1995.@";
+private String userName = "";
+    private String password = "";
     private String baseUrl = "https://stage-platform.kino-mo.com/#/login/api/admin/0/session";
 
 
