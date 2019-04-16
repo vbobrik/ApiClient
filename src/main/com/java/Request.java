@@ -24,8 +24,8 @@ import static org.testng.AssertJUnit.assertNotNull;
 
 
 public class Request {
-    private String userName = "v.bobrik@kino-mo.com";
-    private String password = "NIKita-1995.@";
+    private String userName = "";
+    private String password = "";
     private String baseUrl = "https://stage-platform.kino-mo.com/api/admin/0";
     //   private String aaa = "__stripe_mid=46867503-6aec-46a5-ad14-e4e0b922b7f9; __cfduid=d38d48dc2a8397d49e45dd50dca9ea3791542312240; _ga=GA1.2.300201786.1542312241; _gid=GA1.2.1807524274.1552943447; __stripe_sid=b36272f6-03f8-4868-b4de-2ac9652cc7cf";
 
